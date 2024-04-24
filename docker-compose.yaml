@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  client:
+    build: ./client
+    image: varzil/21bcp090_todo_frontend:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+  server:
+    build: ./server
+    image: varzil/21bcp090_todo_backend:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_URL=${MONGODB_URI}
