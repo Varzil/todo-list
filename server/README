@@ -27,7 +27,7 @@ This Dockerfile sets up a Node.js environment with a simple workflow to build a 
 - Copies all files from the host machine's current directory to the current directory (`/app`) inside the Docker container.
 - This includes source code, configuration files, and any other assets required for the application.
 
-### 6. EXPOSE 3000
+### 6. EXPOSE 8000
 
 - Informs Docker that the container listens on port 3000.
 - This line does not actually publish the port. It's a form of documentation to indicate which port the service within the container listens on.
