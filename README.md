@@ -1,6 +1,4 @@
 # Todo App
-Name - Varzil Thakkar
-Roll No - 21BCP090
 
 # Docker Compose File Explanation
 
